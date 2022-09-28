@@ -1,0 +1,41 @@
+Write a program to find which number is greatest among three numbers.
+
+Input Format:
+Input consists of three integers.
+
+Output Format:
+output consists of greater number
+
+
+Sample Input:
+10
+20
+30
+
+Sample Output:
+30 is greater
+
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if((a>b)&&(a>c))
+    {
+        cout<<a<<" is greater";
+    }
+    else if((b>a)&&(b>c))
+    {
+        cout<<b<<" is greater";
+    }
+    else
+    {
+        cout<<c<<" is greater";
+    }
+    
+    
+}
