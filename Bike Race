@@ -1,0 +1,52 @@
+Joshua is interested very much in seeing Bike race. 
+One Bike is coming so fast. The road on which the Bike comes is divided in to three . 
+There are three roads A, B and C. Each road is given some number. 
+Before the Bike reaches the end of the road Joshua wants to know that out of three roads in which road the Bike will go. 
+Help him in finding in which road the Bike will travel?
+
+INPUT & OUTPUT FORMAT:
+
+Input consists of 4 integers.
+First input corresponds to the number of road A.
+Second input corresponds to the number of road B.
+Third input corresponds to the number of road C.
+Fourth input corresponds to the number of Bikes.
+
+If the Bike cannot travel on any road, display “No path exist”.
+
+Sample Input:
+243
+136
+567
+17
+
+Sample Output:
+Bike 1 goes into road B
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if(a%d==0)
+    {
+        cout<<"Bike 1 goes into road A";
+    }
+    else if (b%d==0)
+    {
+        cout<<"Bike 1 goes into road B";
+    }
+    else if (c%d==0)
+    {
+        cout<<"Bike 1 goes into road c";
+    }
+    else
+    {
+        cout<<"No path exist";
+    }
+    }
+    
+    
