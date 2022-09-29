@@ -1,0 +1,42 @@
+You are so much interested in making your body fit. You want to go to gym daily to make your body fit. But your mother did not like to allow you to gym.
+But she says she will allow you to gym if your weight is not normal. So you want to calculate your Body Mass Index.
+Write a C program to calculate your BMI for your weight and height. Enter your height in centimeters and weight in kilograms.
+
+Input & Output Format:
+Input consists of two integers.
+First input consists of the weight.
+Second input consists of the height.
+If your weight is normal display "You are normal. Go walking daily and maintain it"
+If your weight is under your normal then display "You are underweight. Have an apple daily"
+If your weight is over weight then display "You are obese. Go to doctor".
+
+Sample Input:
+75
+175
+
+Sample Output:
+You are normal. Go walking daily and maintain it.
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b,c;
+    cin>>a>>b;
+    c=((a/(b*b)*10000));
+    if((c>18.5)&&(c<25))
+    {
+        cout<<"You are normal.Go walking daily and maintain it";
+    }
+    else if (c>25)
+    {
+         cout<<"You are obese.Go to doctor";
+    }
+    else if (c<18.5)
+    {
+         cout<<"You are underweight. Have an apple daily";
+    }
+}
+
