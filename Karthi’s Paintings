@@ -20,3 +20,24 @@ Sample Input:
 Sample Output:
 Karthi can fix both painting
 
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int w1,wb,p1,pb,a1,ab,a,b;
+    cin>>w1>>wb>>p1>>pb>>a1>>ab;
+    a=w1*wb;
+    b=(p1*pb)+(a1*ab);
+    if(a>b)
+    {
+        cout<<"Karthi can fix both painting";
+    }
+    else
+    {
+        cout<<"Karthi cannot fix both painting";
+    }
+}
+
