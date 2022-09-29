@@ -1,9 +1,8 @@
-On one fine Sunday Shilpa and Rabina decided to solve puzzles. Shilpa asked Rabina to solve her puzzle. Shilpa gave puzzle on Time.
-She gave Rabina the number of hours, number of minutes and number of seconds as input. 
+On one fine Sunday Shilpa and Rabina decided to solve puzzles. Shilpa asked Rabina to solve her puzzle. 
+Shilpa gave puzzle on Time. She gave Rabina the number of hours, number of minutes and number of seconds as input.
 With the given input, Rabina should find the total number of hours total number of minutes and total number of seconds.
 
 Input Format :
-
 Input consists of three integers.
 First input consists of hours.
 Second input consists of minutes.
@@ -14,6 +13,7 @@ First output consists of hours.
 Second output consists of minutes.
 Third output consists of seconds.
 
+
 Sample Input:
 1
 15
@@ -23,3 +23,28 @@ Sample Output:
 Total Number of hour(s) is 1
 Total Number of minutes is 15
 Total Number of seconds is 10
+
+
+Program;
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int h,m,s;
+    cin>>h>>m>>s;
+    if(m>=60){
+        h=h+1;
+        m=m-60;
+    }
+    if(s>=60){
+        m=m+1;
+        s=s-60;
+        
+    }
+    cout<<"Total Number of hours is "<<h<<endl;
+    cout<<"Total Number of minutes is "<<m<<endl;
+    cout<<"Total Number of seconds is "<<s<<endl;
+
+}
