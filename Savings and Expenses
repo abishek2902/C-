@@ -1,0 +1,37 @@
+Siva after finishing his degree joined a company in Gurugram. 
+His Manager have said him that Siva will get increment if he works hard. 
+As he belongs to a middle class family he wants to plan the budget according to his salary.
+He stays in hostel. His expenses are Hostel fees, bank loan interest.
+He wants to find whether he can save money or he want to work hard or his salary will be able to manage his expenses alone. 
+Help him in calculating the budget.
+
+Sample Input:
+10000
+5000
+4000
+1500
+5000
+
+Sample Output:
+He wants to work hard
+
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main() 
+{
+    int a,b,c,d,e,f;
+    cin>>a>>b>>c>>d>>e;
+    f=(b+c+d+e);
+    if(a>f)
+    {
+        cout<<"He can save the money";
+    }
+    else
+    {
+         cout<<"He wants to work hard";
+    }
+    
+}
