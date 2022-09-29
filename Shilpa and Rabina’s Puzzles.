@@ -1,0 +1,25 @@
+On one fine Sunday Shilpa and Rabina decided to solve puzzles. Shilpa asked Rabina to solve her puzzle. Shilpa gave puzzle on Time.
+She gave Rabina the number of hours, number of minutes and number of seconds as input. 
+With the given input, Rabina should find the total number of hours total number of minutes and total number of seconds.
+
+Input Format :
+
+Input consists of three integers.
+First input consists of hours.
+Second input consists of minutes.
+Third Input consists of seconds.
+
+Output Format:
+First output consists of hours.
+Second output consists of minutes.
+Third output consists of seconds.
+
+Sample Input:
+1
+15
+10
+
+Sample Output:
+Total Number of hour(s) is 1
+Total Number of minutes is 15
+Total Number of seconds is 10
