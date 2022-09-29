@@ -1,0 +1,48 @@
+Geralt starts a new stationery shop. He wants to calculate the number of items that are sold and the number of items that are remaining in the stock.
+When a customer asks for a new item he should check whether the item is already sold or it is available. 
+If the item is not available it should display, "Out of stock". 
+If it is there it should display remaining number of items available and the total cost that should be paid by a customer.
+If the items asked by the customer is greater than the items available it should display how much number of item is available.
+For eg: If customer asks 8 scales and only 3 scales are available, display "Only 3 scale are available"
+
+Input & Output Format:
+Input consists of 1 string and 3 integers.
+First input consists of the name of the stock.
+Second input consists of the number of the stock.
+Third input consists of the amount of the thing.
+Fourth input consists of the remaining item of the stock.
+Refer the sample output for the output.
+
+
+Sample Input: 
+pen
+10
+15
+5
+
+Sample Output:
+Amount for 5 pencil is 75
+Remaining number of pencil present in stock is 5
+
+Program:
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a;
+    int b,c,d;
+    cin>>a>>b>>c>>d;
+    {
+        if(b>d){
+            cout<<"Amount for "<<d<<" "<<a<<" is "<<(c*d)<<endl;
+        }
+        else if((b<d)&&(b>=1))
+        {
+            cout<<"Only"<<(b-d)<<"scale are available";
+            
+        }
+        cout<<"Remaining number of pencil present in stock is "<<(b-d);
+        
+    }
+}
